@@ -14,11 +14,19 @@ export default function SortBar({
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             className="
+            appearance-none
             w-full md:w-72
-            border
-            rounded-xl
+            border-b-2
+            border-gray-300
             px-4 py-2.5
             text-sm md:text-base
+            bg-transparent
+            outline-none
+            transition-all duration-300
+
+            focus:border-amber-700
+            focus:bg-white
+            focus:shadow-sm
             "
         />
 
@@ -28,10 +36,18 @@ export default function SortBar({
             onChange={(e) => updateParam("sort", e.target.value)}
             className="
             w-full md:w-auto
-            border
-            rounded-xl
+            border-b-2
+            border-gray-300
             px-4 py-2.5
             text-sm md:text-base
+            font-serif
+            bg-transparent
+            outline-none
+            transition-all duration-300
+
+            focus:border-amber-700
+            focus:bg-white
+            focus:shadow-sm
             "
         >
             <option value="latest">Más nuevos</option>

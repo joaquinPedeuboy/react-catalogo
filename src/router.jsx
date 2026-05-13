@@ -9,6 +9,9 @@ const router = createBrowserRouter([
     {
         path: "/",
         Component: Layout,
+        handle: {
+            title: "Emilia Deco Home",
+        },
         children: [
         {
             index: true,
@@ -17,16 +20,25 @@ const router = createBrowserRouter([
         {
             path: "products",
             Component: Products,
+            handle: {
+                title: "Productos | Emilia Deco Home",
+            },
         },
         {
             path: "product/:slug",
             Component: ProductDetail,
+            handle: {
+                title: "Producto | Emilia Deco Home",
+            },
         },
         ],
     },
     {
         path: "*",
         Component: NotFound,
+        handle: {
+            title: "404 | Emilia Deco Home",
+        },
     },
 ]);
 
