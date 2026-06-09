@@ -4,6 +4,8 @@ import Layout from './components/layout/Layout'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import NotFound from './pages/NotFound'
+import Terms from './pages/Terms'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const router = createBrowserRouter([
     {
@@ -31,6 +33,20 @@ const router = createBrowserRouter([
                 title: "Producto | Emilia Deco Home",
             },
         },
+        {
+            path: "terms",
+            Component: Terms,
+            handle: {
+                title: "Términos y Condiciones | Emilia Deco Home",
+            },
+        },
+        {
+            path: "privacy-policy",
+            Component: PrivacyPolicy,
+            handle: {
+                title: "Política de Privacidad | Emilia Deco Home",
+            },
+        }
         ],
     },
     {
@@ -40,6 +56,7 @@ const router = createBrowserRouter([
             title: "404 | Emilia Deco Home",
         },
     },
+
 ]);
 
 export default router

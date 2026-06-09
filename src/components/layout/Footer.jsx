@@ -3,6 +3,8 @@
 //         "Hola! Quisiera hacer una consulta sobre los productos 😊"
 //     );
 
+import { Link } from "react-router-dom";
+
 //     const whatsappLink = `https://wa.me/5491123456789?text=${whatsappMessage}`;
 //     return (
 //         <footer className="mt-16 border-t border-gray-200 bg-primary/5">
@@ -312,12 +314,24 @@ export default function Footer() {
 
                         <p>Envíos a todo el país</p>
                         <p>Atención personalizada</p>
-                        <a 
-                        href="mailto:emiliaDecoHome@outlook.com?subject=Consulta" 
-                        className="block hover:text-gray-900"
+                        <Link 
+                            to="mailto:emiliaDecoHome@outlook.com?subject=Consulta"
+                            className="block hover:text-gray-900"
                         >
                             Email: emiliaDecoHome@outlook.com
-                        </a>
+                        </Link>
+                        <Link 
+                            to="/terms" 
+                            className="block hover:text-gray-900"
+                        >
+                            Términos y Condiciones
+                        </Link>
+                        <Link
+                            to="/privacy-policy"
+                            className="block hover:text-gray-900"
+                        >
+                            Política de Privacidad
+                        </Link>
                     </div>
 
                 </div>
