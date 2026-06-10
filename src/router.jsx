@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Layout from './components/layout/Layout'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
-import NotFound from './pages/NotFound'
+import Notfound from './pages/Notfound'
 import Terms from './pages/Terms'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
     },
     {
         path: "*",
-        Component: NotFound,
+        Component: Notfound,
         handle: {
             title: "404 | Emilia Deco Home",
         },
