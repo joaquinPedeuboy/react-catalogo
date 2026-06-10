@@ -301,9 +301,9 @@ export default function Footer() {
                             Navegación
                         </h4>
 
-                        <a href="/" className="block hover:text-gray-900">Inicio</a>
-                        <a href="/products" className="block hover:text-gray-900">Productos</a>
-                        <a href="/products" className="block hover:text-gray-900">Categorías</a>
+                        <Link to="/" className="block hover:text-gray-900">Inicio</Link>
+                        <Link to="/products" className="block hover:text-gray-900">Productos</Link>
+                        <Link to="/products" className="block hover:text-gray-900">Categorías</Link>
                     </div>
 
                     {/* Info */}
