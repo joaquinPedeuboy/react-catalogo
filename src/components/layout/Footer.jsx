@@ -349,7 +349,7 @@ export default function Footer() {
                             href="https://github.com/joaquinPedeuboy" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="underline underline-offset-2 hover:opacity-80 transition"
+                            className="underline underline-offset-2 hover:opacity-80 transition whitespace-nowrap"
                         >
                             Joaquín Pedeuboy · Desarrollador Web
                         </a>
