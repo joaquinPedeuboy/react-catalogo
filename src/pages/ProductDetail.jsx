@@ -58,31 +58,31 @@ export default function ProductDetail() {
 
   const whatsappMessage = encodeURIComponent(
     hasStock
-    ? `¡Hola! 😊
+    ? `¡Hola! \u{1F60A}
 
-        Me interesa este producto de Emilia Deco Home:
+    Me interesa este producto de Emilia Deco Home:
 
-        🏷️ *Producto:* ${product.name}
-        ${selectedColor ? `🎨 *Color:* ${selectedColor.name}` : ""}
-        ${selectedSize ? `📏 *Tamaño:* ${selectedSize.name}` : ""}
-        💰 *Precio:* $${Number(product.price).toLocaleString("es-AR")}
+    \u{1F3F7}\u{FE0F} *Producto:* ${product.name}
+    ${selectedColor ? `\u{1F3A8} *Color:* ${selectedColor.name}` : ""}
+    ${selectedSize ? `\u{1F4CF} *Tamaño:* ${selectedSize.name}` : ""}
+    \u{1F4B0} *Precio:* $${Number(product.price).toLocaleString("es-AR")}
 
-        🔗 *Ver producto:*
-        ${productUrl}
+    \u{1F517} *Ver producto:*
+    ${productUrl}
 
-        ¿Podrían brindarme más información?
+    ¿Podrían brindarme más información?
 
-        ¡Muchas gracias! ✨`
-            : `¡Hola! 😊
+    ¡Muchas gracias! \u{2728}`
+        : `¡Hola! \u{1F60A}
 
-        Vi este producto en Emilia Deco Home y quería consultar si volverá a ingresar stock:
+    Vi este producto en Emilia Deco Home y quería consultar si volverá a ingresar stock:
 
-        🏷️ *Producto:* ${product.name}
+    \u{1F3F7}\u{FE0F} *Producto:* ${product.name}
 
-        🔗 *Ver producto:*
-        ${productUrl}
+    \u{1F517} *Ver producto:*
+    ${productUrl}
 
-        ¡Muchas gracias! ✨`
+    ¡Muchas gracias! \u{2728}`
   );
 
   const whatsappLink = `https://wa.me/5492324586726?text=${whatsappMessage}`;
