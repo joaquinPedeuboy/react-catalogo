@@ -229,7 +229,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
 
     const whatsappMessage = encodeURIComponent(
-        "Hola! Quisiera hacer una consulta sobre los productos 😊"
+        "Hola! Quisiera hacer una consulta sobre los productos."
     );
 
     const whatsappLink = `https://wa.me/5492324586726?text=${whatsappMessage}`;

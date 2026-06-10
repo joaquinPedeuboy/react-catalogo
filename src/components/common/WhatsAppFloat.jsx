@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WhatsAppFloat() {
 
-    const message = encodeURIComponent("Hola, estoy interesado en sus productos. ¿Podrían brindarme más información?😊");
+    const message = encodeURIComponent("Hola, estoy interesado en sus productos. ¿Podrían brindarme más información?");
 
     const link = `https://wa.me/5492324586726?text=${message}`;
 

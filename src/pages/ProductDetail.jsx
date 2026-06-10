@@ -54,20 +54,35 @@ export default function ProductDetail() {
   const isSizeValid = !requiresSize || selectedSize;
 
   const isDisabled = !(isColorValid && isSizeValid);
+  const productUrl = window.location.href;
 
   const whatsappMessage = encodeURIComponent(
     hasStock
-    ? `Hola! Quiero consultar este producto:
+    ? `¡Hola! 😊
 
-      🛍️ ${product.name}
-      🎨 Color: ${selectedColor?.name || "No seleccionado"}
-      📏 Tamaño: ${selectedSize?.name || "No seleccionado"}
-      💰 Precio: $${Number(product.price).toLocaleString("es-AR")}
+        Me interesa este producto de Emilia Deco Home:
 
-      Gracias!`
-    : `Hola! Vi este producto sin stock y quiero saber si va a reingresar:
-      🛍️ ${product.name}
-      Gracias!`
+        🏷️ *Producto:* ${product.name}
+        ${selectedColor ? `🎨 *Color:* ${selectedColor.name}` : ""}
+        ${selectedSize ? `📏 *Tamaño:* ${selectedSize.name}` : ""}
+        💰 *Precio:* $${Number(product.price).toLocaleString("es-AR")}
+
+        🔗 *Ver producto:*
+        ${productUrl}
+
+        ¿Podrían brindarme más información?
+
+        ¡Muchas gracias! ✨`
+            : `¡Hola! 😊
+
+        Vi este producto en Emilia Deco Home y quería consultar si volverá a ingresar stock:
+
+        🏷️ *Producto:* ${product.name}
+
+        🔗 *Ver producto:*
+        ${productUrl}
+
+        ¡Muchas gracias! ✨`
   );
 
   const whatsappLink = `https://wa.me/5492324586726?text=${whatsappMessage}`;
